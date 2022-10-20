@@ -1,7 +1,14 @@
-﻿namespace SGReproOnPages;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 
+namespace SGReproOnPages;
+
+//Uncomment the line below to see the other error
+
+
+//[INotifyPropertyChanged]
 public partial class MainPage : ContentPage
 {
+	[ObservableProperty]
 	int count = 0;
 
 	public MainPage()
